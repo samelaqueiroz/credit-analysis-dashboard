@@ -42,11 +42,7 @@ st.markdown("""
 # ─── Carregamento de dados ─────────────────────────────────────────────────────
 @st.cache_data
 def carregar_dados():
-<<<<<<< HEAD
     df = pd.read_csv("data/carteira_credito.csv")
-=======
-    df = pd.read_csv("carteira_credito.csv")
->>>>>>> 9e4f5209418a43d99a9e949d663d9b3828ac135a
 
     df["faixa_renda"] = pd.cut(
         df["renda_mensal"],
